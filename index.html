@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="golfApp">
+<head>
+	<meta charset="utf-8">
+	<title>GolfTracker</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link href="css/landing-page.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="styleSheet" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" ui-sref="home">GolfTracker</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-sref="courses">Scorecard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<ui-view></ui-view>
+
+<footer id="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a ui-sref="home">Home</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright © FodderOtter 2016. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.js"></script>
+<script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.0-beta.4/angular-moment.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/controllers/homeCtrl.js"></script>
+<script src="../js/controllers/coursesCtrl.js"></script>
+<script src="../js/controllers/courseCtrl.js"></script>
+<script src="/js/services/golfService.js"></script>
+<script src="/js/directives/inputDirective.js"></script>
+<script src="/js/directives/backDirective.js"></script>
+</body>
+</html>

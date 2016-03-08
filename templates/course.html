@@ -1,0 +1,59 @@
+<h1 id="courseHeader">{{course.courseName}}</h1>
+<div class="container">
+	<div class="row">
+		<br><br><br>
+		<div class="col-md-4">
+			<button back-directive>back</button back-directive>
+			<header>Past results</header>
+			<div ui-grid="{ data: scores }" class="myGrid"></div>
+		</div>
+		<div class="col-md-8" id="inputHeader">
+			<header id="cardHead">Enter your Scores</header>
+			<br>
+			<div class="col-md-4" class="holes">
+				<label class="hole">first hole:</label>
+				<label class="hole">second hole:</label>
+				<label class="hole">third hole:</label>
+				<label class="hole">fourth hole:</label>
+				<label class="hole">fifth hole:</label>
+				<label class="hole">sixth hole:</label>
+				<label class="hole">seventh hole:</label>
+				<label class="hole">eighth hole:</label>
+				<label class="hole">ninth hole:</label>
+				<label class="hole">tenth hole:</label>
+				<label class="hole">eleventh hole:</label>
+				<label class="hole">twelvth hole:</label>
+				<label class="hole">thirteenth hole:</label>
+				<label class="hole">fourteenth hole:</label>
+				<label class="hole">fifteenth hole:</label>
+				<label class="hole">sixteenth hole:</label>
+				<label class="hole">seventeenth hole:</label>
+				<label class="hole">eighteenth hole:</label>
+				<label class="hole">Total Score:</label>
+			</div>
+			<div class="col-md-4" class="scores">
+				<input ng-model="game.holeNum1" class="score" type="number">
+				<input ng-model="game.holeNum2" class="score" type="number">
+				<input ng-model="game.holeNum3" class="score" type="number">
+				<input ng-model="game.holeNum4" class="score" type="number">
+				<input ng-model="game.holeNum5" class="score" type="number">
+				<input ng-model="game.holeNum6" class="score" type="number">
+				<input ng-model="game.holeNum7" class="score" type="number">
+				<input ng-model="game.holeNum8" class="score" type="number">
+				<input ng-model="game.holeNum9" class="score" type="number">
+				<input ng-model="game.holeNum10" class="score" type="number">
+				<input ng-model="game.holeNum11" class="score" type="number">
+				<input ng-model="game.holeNum12" class="score" type="number">
+				<input ng-model="game.holeNum13" class="score" type="number">
+				<input ng-model="game.holeNum14" class="score" type="number">
+				<input ng-model="game.holeNum15" class="score" type="number">
+				<input ng-model="game.holeNum16" class="score" type="number">
+				<input ng-model="game.holeNum17" class="score" type="number">
+				<input ng-model="game.holeNum18" class="score" type="number">
+				<label id="gamescore" >{{sum}}</label>
+			</div>
+		</div>
+		<button ng-click="saveScore()" id="submitscore">Submit</button>
+		<br><br><br>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+<h1 id="courseHeader">Select your course</h1>
+<div class="container">
+	<div class="course">
+		<div ng-repeat="(key, course) in courses track by $index">
+			<!-- <span>{{course.coursePic}}</span> -->
+			<h4>{{course.courseName}}, par: {{course.coursePar}}</h4>
+			<button ui-sref="course({id:course.$id})">Create a new scorecard</button>
+			<button ng-click="deleteCourse($index)">Delete Course</button>
+		</div>
+	</div>
+	<div class="course">
+		<div class="col-sm-3">
+			<h4 class="section-heading">Add New Course</h4>
+			<input type="text" class="form-control" ng-model="courseName" placeholder="Course Name"/>
+			<input type="number" placeholder="Course Par" ng-model="coursePar">
+			<input type="file" accept="image/*" name="coursePic">
+			<button ng-click="addCourse()">Add</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--<div id="oldCourse">
+	<a><img src="/img/oldcourse-firewheel-tx.jpg" /></a>
+	<br>
+	<label class="courseImg">Firewheel Old Course</label>
+	<div id="createCard">
+		<br>
+		<button ui-sref="courses({id:course.$id})">Create a new scorecard</button>
+		<br>
+	</div>
+</div>
+<div id="lakeCourse">
+	<a ng-click="show=!show"><img src="/img/lakes-firewheel-texas.jpg" /></a>
+	<br>
+	<label class="courseImg">Firewheel Lake Course</label>
+	<div id="createCard">
+		<br>
+		<button ui-sref="courses">Create a new scorecard</button>
+		<br>	
+	</div>
+</div> -->

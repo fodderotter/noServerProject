@@ -1,0 +1,46 @@
+.courseImg {
+	display:inline;
+	clear:both;
+	text-align: center
+}
+#course {
+	text-align: center;
+}
+a::hover {
+	pointer:cursor;
+}
+.course {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 120px 0px;
+	flex-wrap: wrap;
+}
+#courseHeader {
+	display:flex;
+	justify-content: space-around;
+}
+#homeinput{ 
+	background-image: url("");
+	color:black!important;
+}
+#go{
+	background-color: white;
+}
+#inputHeader{
+	text-align: center;
+}
+#cardHead{
+	font-size: 24px;
+}
+label{
+	display:flex;
+	flex-direction:column;
+}
+.hole{
+	text-align:right!important;
+	font-size:15px!important;
+}
+#submitscore{
+	margin-left: 700px;
+}
