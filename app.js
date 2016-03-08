@@ -3,7 +3,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise("/");
 	$stateProvider
 	.state("home", {
-		templateUrl:"../templates/home.html",
+		templateUrl:"templates/home.html",
 		url:"/",
 		controller:"homeCtrl",
 		// resolve:{
@@ -13,7 +13,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 		// }
 	})
 	.state("courses", {
-		templateUrl:"../templates/courses.html",
+		templateUrl:"templates/courses.html",
 		url:"/courses",
 		controller:"coursesCtrl",
 		resolve: {
@@ -23,7 +23,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 		}
 	})
 	.state("course", {
-		templateUrl:"../templates/course.html",
+		templateUrl:"templates/course.html",
 		url:"/courses/:id",
 		controller:"courseCtrl",
 		resolve: {
